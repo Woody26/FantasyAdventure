@@ -32,5 +32,16 @@ public class Game {
         player.increaseHealthPoints(-damage);
     }
 
+    public void passThroughRooms(){
+        for(Room room : rooms){
+            if(room.getEnemy() != null){
+                fight(room);
+            }
+            if(room.getTreasureType() != null){
+                getTreasure(room);
+            }
+        }
+    }
+
 
 }

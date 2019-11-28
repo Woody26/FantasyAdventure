@@ -21,7 +21,8 @@ public class GameTest {
     private Warrior warrior;
     private Magician magician;
     private Healer healer;
-    private Room room;
+    private Room enemyRoom;
+    private Room treasureRoom;
     private Enemy enemy;
     private Weapon weapon;
     private Spell spell;
@@ -32,7 +33,8 @@ public class GameTest {
     @Before
     public void before(){
         enemy = new Enemy("Grog");
-        room = new Room("Hopper", TreasureType.GOLD, enemy);
+        enemyRoom = new Room("Hopper", null, enemy);
+        treasureRoom = new Room("Sinclair", TreasureType.GOLD, null);
         weapon = new Weapon("Dyrnwyn");
         spell = new Spell("Gotcha");
         creature = new Creature("Fido");
@@ -45,49 +47,59 @@ public class GameTest {
 
     @Test
     public void warriorCanFight(){
-        rooms.add(room);
+        rooms.add(enemyRoom);
         game = new Game(warrior, rooms);
-        game.fight(room);
+        game.fight(enemyRoom);
         assertEquals(95, warrior.getHealthPoints());
     }
 
     @Test
     public void magicianCanFight(){
-        rooms.add(room);
+        rooms.add(enemyRoom);
         game = new Game(magician, rooms);
-        game.fight(room);
+        game.fight(enemyRoom);
         assertEquals(95, magician.getHealthPoints());
     }
 
     @Test
     public void healerCanFight(){
-        rooms.add(room);
+        rooms.add(enemyRoom);
         game = new Game(healer, rooms);
-        game.fight(room);
+        game.fight(enemyRoom);
         assertEquals(95, healer.getHealthPoints());
     }
 
     @Test
     public void warriorCanGetTreasure(){
-        rooms.add(room);
+        rooms.add(treasureRoom);
         game = new Game(warrior, rooms);
-        game.getTreasure(room);
+        game.getTreasure(treasureRoom);
         assertEquals(10, warrior.getTreasurePoints());
     }
 
     @Test
     public void magicianCanGetTreasure(){
-        rooms.add(room);
+        rooms.add(treasureRoom);
         game = new Game(magician, rooms);
-        game.getTreasure(room);
+        game.getTreasure(treasureRoom);
         assertEquals(10, magician.getTreasurePoints());
     }
 
     @Test
     public void healerCanGetTreasure(){
-        rooms.add(room);
+        rooms.add(treasureRoom);
         game = new Game(healer, rooms);
-        game.getTreasure(room);
+        game.getTreasure(treasureRoom);
         assertEquals(10, healer.getTreasurePoints());
+    }
+
+    @Test
+    public void canPassThroughRooms(){
+        rooms.add(enemyRoom);
+        rooms.add(treasureRoom);
+        game = new Game(warrior, rooms);
+        game.passThroughRooms();
+        assertEquals(95, warrior.getHealthPoints());
+        assertEquals(10, warrior.getTreasurePoints());
     }
 }
