@@ -18,4 +18,8 @@ public class Healer extends Player{
     public void setHealingTool(HealingTool healingTool){
         this.healingTool = healingTool;
     }
+
+    public void getPaidForHealing(){
+        increaseTreasurePoints(10);
+    }
 }

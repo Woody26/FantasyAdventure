@@ -102,4 +102,11 @@ public class GameTest {
         assertEquals(95, warrior.getHealthPoints());
         assertEquals(10, warrior.getTreasurePoints());
     }
+
+    @Test
+    public void healerCanHeal(){
+        warrior.beHealed(healer);
+        assertEquals(110, warrior.getHealthPoints());
+        assertEquals(10, healer.getTreasurePoints());
+    }
 }

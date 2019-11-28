@@ -67,4 +67,9 @@ public abstract class Player {
     public void increaseDamageReduction(int increase){
         this.damageReduction += increase;
     }
+
+    public void beHealed(Healer healer){
+        increaseHealthPoints(10);
+        healer.getPaidForHealing();
+    }
 }
