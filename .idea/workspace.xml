@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76426407-fb63-4008-91ec-b8822c9323b9" name="Default Changelist" comment="" />
+    <list default="true" id="76426407-fb63-4008-91ec-b8822c9323b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/Healer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/Magician.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/HealingTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Tool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,6 +39,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1UF5GV9Bu3Evw19dCSlaPNt86QY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -47,5 +67,16 @@
       <updated>1574939406110</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
