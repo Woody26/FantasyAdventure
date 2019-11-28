@@ -50,4 +50,44 @@ public class GameTest {
         game.fight(room);
         assertEquals(95, warrior.getHealthPoints());
     }
+
+    @Test
+    public void magicianCanFight(){
+        rooms.add(room);
+        game = new Game(magician, rooms);
+        game.fight(room);
+        assertEquals(95, magician.getHealthPoints());
+    }
+
+    @Test
+    public void healerCanFight(){
+        rooms.add(room);
+        game = new Game(healer, rooms);
+        game.fight(room);
+        assertEquals(95, healer.getHealthPoints());
+    }
+
+    @Test
+    public void warriorCanGetTreasure(){
+        rooms.add(room);
+        game = new Game(warrior, rooms);
+        game.getTreasure(room);
+        assertEquals(10, warrior.getTreasurePoints());
+    }
+
+    @Test
+    public void magicianCanGetTreasure(){
+        rooms.add(room);
+        game = new Game(magician, rooms);
+        game.getTreasure(room);
+        assertEquals(10, magician.getTreasurePoints());
+    }
+
+    @Test
+    public void healerCanGetTreasure(){
+        rooms.add(room);
+        game = new Game(healer, rooms);
+        game.getTreasure(room);
+        assertEquals(10, healer.getTreasurePoints());
+    }
 }

@@ -23,8 +23,8 @@ public class Game {
         this.rooms.add(room);
     }
 
-    public void getTreasure(Player player, TreasureType treasureType){
-        player.increaseTreasurePoints(treasureType.getValue());
+    public void getTreasure(Room room){
+        player.increaseTreasurePoints(room.getTreasureType().getValue());
     }
 
     public void fight(Room room){

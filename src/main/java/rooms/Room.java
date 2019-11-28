@@ -18,7 +18,7 @@ public class Room {
         return this.name;
     }
 
-    public TreasureType getTreasuretype() {
+    public TreasureType getTreasureType() {
         return this.treasuretype;
     }
 
