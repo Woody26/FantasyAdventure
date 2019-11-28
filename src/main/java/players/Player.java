@@ -51,4 +51,20 @@ public abstract class Player {
     public void setDamageReduction(int damageReduction){
         this.damageReduction = damageReduction;
     }
+
+    public void increaseHealthPoints(int increase){
+        this.healthPoints += increase;
+    }
+
+    public void increaseStrengthPoints(int increase){
+        this.strengthPoints += increase;
+    }
+
+    public void increaseTreasurePoints(int increase){
+        this.treasurePoints += increase;
+    }
+
+    public void increaseDamageReduction(int increase){
+        this.damageReduction += increase;
+    }
 }

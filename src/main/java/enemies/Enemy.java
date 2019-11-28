@@ -5,9 +5,9 @@ public class Enemy {
     private String name;
     private int damagePower;
 
-    public Enemy(String name, int damagePower){
+    public Enemy(String name){
         this.name = name;
-        this.damagePower = damagePower;
+        this.damagePower = 10;
     }
 
     public String getName(){

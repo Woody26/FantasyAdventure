@@ -5,9 +5,9 @@ public class Creature {
     private String name;
     private int protectionPower;
 
-    public Creature(String name, int protectionPower){
+    public Creature(String name){
         this.name = name;
-        this.protectionPower = protectionPower;
+        this.protectionPower = 3;
     }
 
     public String getName(){

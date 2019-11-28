@@ -25,5 +25,5 @@ public class Room {
     public Enemy getEnemy() {
         return this.enemy;
     }
-    
+
 }
