@@ -43,5 +43,14 @@ public class Game {
         }
     }
 
+    public String playQuest(){
+        System.out.println("Starting the quest");
+        passThroughRooms();
+        if(player.getHealthPoints() > 0){
+            return "Congratulations! You have completed the quest! You have won " + player.getTreasurePoints() + " treasure points.";
+        }
+        return "Sorry, you didn't survive the quest.";
+    }
+
 
 }

@@ -109,4 +109,22 @@ public class GameTest {
         assertEquals(110, warrior.getHealthPoints());
         assertEquals(10, healer.getTreasurePoints());
     }
+
+    @Test
+    public void canPlayQuest(){
+        rooms.add(enemyRoom);
+        rooms.add(treasureRoom);
+        game = new Game(warrior, rooms);
+        assertEquals("Congratulations! You have completed the quest! You have won 10 treasure points.", game.playQuest());
+    }
+
+    @Test
+    public void canFailQuest(){
+        rooms.add(enemyRoom);
+        warrior.setHealthPoints(3);
+        game = new Game(warrior, rooms);
+        assertEquals("Sorry, you didn't survive the quest.", game.playQuest());
+    }
+
+
 }
