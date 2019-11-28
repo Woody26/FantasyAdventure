@@ -27,8 +27,10 @@ public class Game {
         player.increaseTreasurePoints(treasureType.getValue());
     }
 
-    public void fight(Player player, Enemy enemy){
-        int damage = enemy.getDamagePower() - player.getStrengthPoints() - player.getDamageReduction();
+    public void fight(Room room){
+        int damage = room.getEnemy().getDamagePower() - player.getStrengthPoints() - player.getDamageReduction();
         player.increaseHealthPoints(-damage);
     }
+
+
 }
