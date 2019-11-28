@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76426407-fb63-4008-91ec-b8822c9323b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/creatures/Creature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/Healer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/Magician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/HealingTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Spell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tools/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/TreasureType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -42,6 +35,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="rooms" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
