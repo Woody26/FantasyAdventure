@@ -1,25 +1,31 @@
+import org.junit.Before;
+import org.junit.Test;
+import tools.HealingTool;
+
+import static org.junit.Assert.assertEquals;
+
 public class HealingToolTest {
 
     private HealingTool healingTool;
 
     @Before
     public void before(){
-        creature = new Creature("Grog");
+        healingTool = new HealingTool("Grog");
     }
 
     @Test
     public void canGetName() {
-        assertEquals("Grog", creature.getName());
+        assertEquals("Grog", healingTool.getName());
     }
 
     @Test
-    public void canGetProtectionPower() {
-        assertEquals(3, creature.getProtectionPower());
+    public void canGetPower() {
+        assertEquals(3, healingTool.getPower());
     }
 
     @Test
-    public void canSetProtectionPower() {
-        creature.setProtectionPower(5);
-        assertEquals(5, creature.getProtectionPower());
+    public void canSetPower() {
+        healingTool.setPower(5);
+        assertEquals(5, healingTool.getPower());
     }
 }
