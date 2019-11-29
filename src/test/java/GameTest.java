@@ -104,13 +104,6 @@ public class GameTest {
     }
 
     @Test
-    public void healerCanHeal(){
-        warrior.beHealed(healer);
-        assertEquals(110, warrior.getHealthPoints());
-        assertEquals(10, healer.getTreasurePoints());
-    }
-
-    @Test
     public void canPlayQuest(){
         rooms.add(enemyRoom);
         rooms.add(treasureRoom);

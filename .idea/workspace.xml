@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76426407-fb63-4008-91ec-b8822c9323b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SpellTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HealingToolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HealingToolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,19 +70,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventure" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SpellTest" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WarriorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAdventure" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WarriorTest" />
+      <option name="MAIN_CLASS_NAME" value="SpellTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,10 +100,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in FantasyAdventure" />
+        <item itemvalue="JUnit.RoomTest" />
         <item itemvalue="JUnit.WeaponTest" />
         <item itemvalue="JUnit.SpellTest" />
         <item itemvalue="JUnit.HealingToolTest" />
-        <item itemvalue="JUnit.WarriorTest" />
       </list>
     </recent_temporary>
   </component>
