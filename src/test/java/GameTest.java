@@ -45,6 +45,34 @@ public class GameTest {
         rooms = new ArrayList<Room>();
     }
 
+//    @Test
+//    public void canGetPlayer(){
+//        rooms.add(enemyRoom);
+//        game = new Game(warrior, rooms);
+//    }
+//
+//    @Test
+//    public void canGetRooms(){
+//        rooms.add(enemyRoom);
+//        game = new Game(warrior, rooms);
+//
+//    }
+//
+//  @Test
+//    public void canAddRooms(){
+//        rooms.add(enemyRoom);
+//        game = new Game(warrior, rooms);
+//
+//    }
+//
+//    @Test
+//    public void canSetPlayer(){
+//        rooms.add(enemyRoom);
+//        game = new Game(warrior, rooms);
+//        game.setPlayer(magician);
+//        assertEquals();
+//    }
+
     @Test
     public void warriorCanFight(){
         rooms.add(enemyRoom);

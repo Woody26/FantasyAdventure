@@ -15,9 +15,15 @@ public class Game {
         this.rooms = rooms;
     }
 
+    public Player getPlayer(){
+        return this.player;
+    }
+
     public void setPlayer(Player newPlayer){
         this.player = newPlayer;
     }
+
+//    Get Array list of Rooms
 
     public void addRoom(Room room){
         this.rooms.add(room);
